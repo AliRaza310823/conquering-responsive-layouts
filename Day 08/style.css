@@ -21,6 +21,10 @@ body {
     font-size: var(--fs-regular);
 }
 
+img {
+    max-width: 100%;
+}
+
 .hero {
     width: 100%;
     background-color: var(--clr-darkgreen);
@@ -31,12 +35,15 @@ body {
     max-width: 1200px;
     width: 80%;
     margin: 0 auto;
+    border: 5px solid lime;
 }
 
 .hero-inside {
     width: 70%;
-    /* max-width: 1200px; */
-    /* border: 2px solid blue; */
+}
+
+.hero-image {
+    align-self: flex-start;
 }
 
 h1 {
@@ -73,6 +80,7 @@ button {
 
 .col h2 {
     font-size: var(--fs-semi-bold);
+    margin-bottom: 1.5rem;
 }
 
 .three-col {
