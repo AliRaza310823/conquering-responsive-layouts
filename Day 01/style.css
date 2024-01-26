@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* NOTE  */
+/* websites are responsive, we should not use css that breaks the responsive 
+one good approach is as follows*/
+
+/* avoid using fixed widths, use percentages instead  */
+
+/* avoid using heights whenever possible, it's a general rule */
+
+.parent {
+    background-color: darkblue;
+    color: white;
+    padding: 1rem;
+/* if we go smaller than the fixed width or height value, the content
+will start to overflow, which is very important because if it did not
+overflow and instead started to disappear, that would be a great problem */
+    width: 80%;
+    margin: 0 auto;
+}
+
+.child {
+    background-color: lightblue;
+}
