@@ -39,11 +39,12 @@ img {
 }
 
 .hero-inside {
-    width: 70%;
+    width: 65%; 
 }
 
 .hero-image {
     align-self: flex-start;
+    width: 30%;
 }
 
 h1 {
