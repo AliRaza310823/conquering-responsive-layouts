@@ -179,8 +179,9 @@ h2 {
   background-color: var(--clr-dark);
 }
 
-.section-img {
-  background-color: white;
+.section-img img {
+  width: 100%;
+  object-fit: cover;
 }
 
 /* third section */
