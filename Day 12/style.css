@@ -100,7 +100,71 @@ select {
   }
 }
 
+/* CSS here */
+
+.section-img img {
+  width: 100%;
+  object-fit: cover;
+} 
+
+
 .wrapper {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.flow > * {
+  margin-bottom: 1.25rem;
+}
+
+.header {
+  padding: 4em;
+  text-align: center;
+  background-color: var(--clr-light);
+  color: var(--clr-brown);
+  display: flex;
+  justify-content: center;
+}
+
+.header-text {
+  font-size: 1rem;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+}
+
+.title {
+  font-size: 3rem;
+}
+
+.section {
+  padding-block: 4em;
+}
+
+.sub-title-dark {
+  color: var(--clr-brown);
+}
+
+.sub-title {
+  font-size: 1.875rem;
+  margin-bottom: 1.25rem;
+}
+
+.section p {
+  margin-bottom: 1rem;
+}
+
+.section-second {
+  background-color: var(--clr-dark);
+  color: var(--clr-light);
+}
+
+.section-third {
+  background-color: var(--clr-brown);
+  color: var(--clr-light);
+}
+
+@media (width > 50em) {
+  .wrapper {
     width: 100%;
     max-width: 1128px;
     margin: 0 auto;
@@ -113,82 +177,22 @@ select {
 }
 
 .col {
-    width: 47%;
+    width: 100%;
 }
 
-/* CSS here for file */
-.header {
-    height: 100vh;
-    background-color: var(--clr-light);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+.col + .col {
+  margin-left: 3em;
 }
 
 .header-inside {
-    width: 60%;
+  width: 60%;
 }
 
-.header-inside p {
-    text-transform: uppercase;
-    font-weight: var(--fw-light);
-    font-size: var(--fs-light);
-    color: var(--clr-dark);
-    margin-bottom: 1.2rem;
-    letter-spacing: 5px;
+.sub-title {
+  font-size: 2.25rem;
 }
 
-h1 {
-    font-size: 3.75rem;
-    font-weight: var(--fw-black);
-    color: var(--clr-brown);
-    font-family: var(--ff-heading);
-    line-height: 1;
+.sub-title-dark {
+  text-align: center;
 }
-
-h2 {
-    font-size: 2.25rem;
-    font-weight: var(--fw-black);
-    font-family: var(--ff-heading);
-    margin-bottom: 1.5rem;
 }
-
-.section-text {
-  color: var(--clr-light);  
-}
-
-.section {
-  padding-block: 4em;
-}
-
-/* first section */
-.section-first .sub-title {
-    color: var(--clr-brown);
-    margin-bottom: 2rem;
-    text-align: center;
-}
-
-.section-first p {
-  color: var(--clr-dark);
-}
-
-/* second section */
-
-.section-second {
-  background-color: var(--clr-dark);
-}
-
-.section-img img {
-  width: 100%;
-  object-fit: cover;
-}
-
-/* third section */
-.section-third {
-  background-color: var(--clr-brown);
-}
-
-
-
-
