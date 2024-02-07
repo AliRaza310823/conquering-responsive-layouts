@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+:root {
+    --clr-darkgreen: #23424A;
+    --clr-green: #136C72;
+    --clr-aqua: #38CFD9;
+
+    --ff-roboto: 'Roboto', sans-serif;
+    --ff-body: var(--ff-roboto);
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: var(--ff-body);
+    font-size: 1.3rem;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-top: 0;
+}
+
+.container {
+    margin: 0 auto;
+    width: Min(100% - 3em, 1100px);
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+    opacity: .75; 
+}
+
+.main {
+    padding: 4em 0 0;
+}
+
+.header {
+    background-color: var(--clr-green);
+    text-align: center;
+}
+
+.logo a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-list {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 2rem;
+}
+
+.nav-list li {
+    margin-bottom: 1rem;
+}
+
+.nav-list a {
+    font-weight: 300;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-list li:hover a {
+    color: black;
+    text-decoration: underline;
+}
+
+.header-button {
+    border: none;
+    text-transform: uppercase;
+    background-color: transparent;
+    color: white;
+    font-weight: 900;
+    cursor: pointer;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.header-button:hover,
+.header-button:focus {
+    opacity: 0.8;
+}
+
+.hero {
+    padding: 100px 0;
+    background-color: #23424A;
+    color: #FFF;
+}
+
+.hero p {
+    margin-bottom: 3em;
+}
+
+.side-bar {
+    background-color: var(--clr-green);
+    color: white;
+}
+
+.hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase; 
+    color: #23424A;
+    font-weight: 900;
+    background-color: #38CFD9;
+    padding: .75em 2em;
+    border-radius: 100px;
+    margin-bottom: 1rem;
+}
+
+
+@media (width > 50em) {
+    .row {
+        display: flex;
+        justify-content: space-between;
+        gap: 1.5rem;
+    }
+
+    .header-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .nav-list {
+        display: flex;
+        gap: 3rem;
+    }
+
+    .hero__text { 
+        width: 62%;
+    }
+    
+    .hero__img {
+        width: 32%;
+        align-self: flex-start;
+    }
+
+    .main-content {
+        width: 62%;
+    }
+    
+    .side-bar {
+        width: 32%;
+        text-align: center;
+        padding: 0 2rem;
+    }
+}
